@@ -1,0 +1,270 @@
+---
+// Hero section component
+---
+
+<section id="home" class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>Full Stack Developer | Software Architect</span>
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="highlight">Damilola Aromiwe</span>
+      </h1>
+      <p class="hero-description">
+        Experienced Full Stack Developer with 8 years of expertise in building scalable web applications, mobile applications, and backend systems. I transform business requirements into innovative, user-centric technology solutions.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">8+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="profile-image">
+        <div class="profile-placeholder">
+          <span>👨‍💻</span>
+        </div>
+        <div class="floating-tech">
+          <span class="tech-icon">⚛️</span>
+          <span class="tech-icon">📱</span>
+          <span class="tech-icon">🔗</span>
+          <span class="tech-icon">☁️</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #000000;
+    color: white;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(96, 165, 250, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(251, 191, 36, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    opacity: 0.95;
+  }
+
+  .highlight {
+    color: #fbbf24;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    opacity: 0.7;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .btn-primary {
+    background: #fbbf24;
+    color: #1f2937;
+  }
+
+  .btn-primary:hover {
+    background: #f59e0b;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+
+  .btn-secondary:hover {
+    background: white;
+    color: #667eea;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(96, 165, 250, 0.1);
+    color: #60a5fa;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #60a5fa;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    opacity: 0.6;
+  }
+
+  .profile-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .profile-placeholder {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(251, 191, 36, 0.3);
+  }
+
+  .floating-tech {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .tech-icon {
+    position: absolute;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .tech-icon:nth-child(1) {
+    top: 10%;
+    right: 10%;
+    animation-delay: 0s;
+  }
+
+  .tech-icon:nth-child(2) {
+    bottom: 20%;
+    right: 0%;
+    animation-delay: 1s;
+  }
+
+  .tech-icon:nth-child(3) {
+    top: 60%;
+    left: -10%;
+    animation-delay: 2s;
+  }
+
+  .tech-icon:nth-child(4) {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @media (max-width: 768px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2rem;
+    }
+
+    .hero-title {
+      font-size: 1.8rem;
+    }
+
+    .hero-buttons {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-stats {
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .profile-image {
+      width: 250px;
+      height: 250px;
+    }
+  }
+</style>

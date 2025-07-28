@@ -1,0 +1,166 @@
+---
+// Portfolio section component
+---
+
+<section id="portfolio" class="services">
+  <div class="services-container">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">
+      A showcase of my recent work and successful project deliveries
+    </p>
+    <div class="services-grid">
+      <div class="service-card project-card">
+        <div class="service-icon">🍽️</div>
+        <h3>DishDishFun</h3>
+        <p>Mobile application for food enthusiasts. Available on both iOS and Android platforms with engaging user experience.</p>
+        <div class="project-links">
+          <a href="https://apps.apple.com/us/app/dishdishfun" target="_blank" class="project-link">iOS App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.dishdishfun" target="_blank" class="project-link">Android App</a>
+        </div>
+      </div>
+      <div class="service-card project-card">
+        <div class="service-icon">🏥</div>
+        <h3>Surviving & Thriving</h3>
+        <p>Health and fitness application designed for firefighters and first responders. Featured in academic research.</p>
+        <div class="project-links">
+          <a href="https://play.google.com/store/apps/datasafety?id=com.bkl.thriving" target="_blank" class="project-link">Android App</a>
+          <a href="https://researchoutput.ncku.edu.tw/en/publications/surviving-amp-thriving-a-healthy-lifestyle-app-for-new-us-firefig" target="_blank" class="project-link">Research</a>
+        </div>
+      </div>
+      <div class="service-card project-card">
+        <div class="service-icon">🌤️</div>
+        <h3>Meow Weather</h3>
+        <p>Delightful weather application with cat-themed forecasts. Cross-platform mobile app for weather enthusiasts.</p>
+        <div class="project-links">
+          <a href="https://apps.apple.com/us/app/meow-weather-cat-forecast" target="_blank" class="project-link">iOS App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.lyker.meowweather" target="_blank" class="project-link">Android App</a>
+        </div>
+      </div>
+      <div class="service-card project-card">
+        <div class="service-icon">💳</div>
+        <h3>Credit Glory</h3>
+        <p>Frontend development and SEO optimization for credit repair services serving clients across all US states.</p>
+        <div class="project-links">
+          <a href="https://www.creditglory.com" target="_blank" class="project-link">Visit Site</a>
+        </div>
+      </div>
+      <div class="service-card project-card">
+        <div class="service-icon">🔗</div>
+        <h3>PolyAlpha DeFi</h3>
+        <p>Comprehensive blockchain solution showcasing advanced DeFi development skills and smart contract implementation.</p>
+        <div class="project-links">
+          <a href="http://polyalpha.io/" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="service-card project-card">
+        <div class="service-icon">🏛️</div>
+        <h3>West Virginia Polymer Alliance Zone</h3>
+        <p>Collaborated on the development of the official website and created standalone Windows application for pitch deck presentations.</p>
+        <div class="project-links">
+          <a href="https://www.pazwv.org" target="_blank" class="project-link">Visit Website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .services {
+    padding: 6rem 0;
+    background: #000000;
+  }
+
+  .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #f1f5f9;
+    opacity: 0.95;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 4rem;
+    opacity: 0.7;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    padding: 2.5rem 2rem;
+    background: #1e293b;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: rgba(96, 165, 250, 0.3);
+  }
+
+  .service-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #f1f5f9;
+    opacity: 0.9;
+  }
+
+  .service-card p {
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    opacity: 0.7;
+    font-size: 0.8rem;
+  }
+
+  .project-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #60a5fa;
+    color: #0a0a0a;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .project-link:hover {
+    background: #3b82f6;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+  }
+</style>

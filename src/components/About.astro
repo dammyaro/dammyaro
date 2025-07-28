@@ -1,0 +1,182 @@
+---
+// About section component
+---
+
+<section id="about" class="about">
+  <div class="about-container">
+    <div class="about-content">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        I'm a passionate Full Stack Developer and Software Architect with 8 years of experience building scalable applications. 
+        I specialize in translating complex business requirements into innovative, user-centric technology solutions while maintaining 
+        best practices for performance, security, and scalability.
+      </p>
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">🏗️</div>
+          <h3>System Architecture</h3>
+          <p>Designing scalable and maintainable software architectures</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <h3>Performance Optimization</h3>
+          <p>Backend systems and database optimization expertise</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📱</div>
+          <h3>Cross-Platform Development</h3>
+          <p>iOS and Android applications with modern frameworks</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔗</div>
+          <h3>Blockchain Development</h3>
+          <p>Decentralized applications and DeFi solutions</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💰</div>
+          <h3>Fintech Solutions</h3>
+          <p>Financial technology and secure payment systems</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔍</div>
+          <h3>SEO & Optimization</h3>
+          <p>Search engine optimization and user experience</p>
+        </div>
+      </div>
+      <div class="education-section">
+        <h3>Education & Certifications</h3>
+        <div class="education-grid">
+          <div class="education-item">
+            <h4>BTech Industrial Mathematics</h4>
+            <p>Federal University of Technology, Akure (2013-2017)</p>
+          </div>
+          <div class="education-item">
+            <h4>Google Developer Associate</h4>
+            <p>Professional certification in Google Cloud Platform</p>
+          </div>
+          <div class="education-item">
+            <h4>AWS Certified Solutions Architect</h4>
+            <p>Certified in designing distributed systems on AWS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding: 6rem 0;
+    background: #000000;
+  }
+
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f1f5f9;
+    opacity: 0.95;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+    color: #94a3b8;
+    opacity: 0.7;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .education-section {
+    margin-top: 3rem;
+  }
+
+  .education-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #f1f5f9;
+    text-align: center;
+    opacity: 0.9;
+  }
+
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .education-item {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #60a5fa;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .education-item:hover {
+    border-color: rgba(96, 165, 250, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .education-item h4 {
+    color: #f1f5f9;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+
+  .education-item p {
+    color: #94a3b8;
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 2rem;
+    background: #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .feature:hover {
+    transform: translateY(-5px);
+    border-color: rgba(96, 165, 250, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  }
+
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .feature h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #f1f5f9;
+    opacity: 0.9;
+  }
+
+  .feature p {
+    color: #94a3b8;
+    opacity: 0.7;
+    font-size: 0.8rem;
+  }
+</style>
