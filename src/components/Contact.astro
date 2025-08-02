@@ -3,49 +3,127 @@
 ---
 
 <section id="contact" class="contact">
-  <div class="contact-container">
-    <h2 class="section-title">Let's Work Together</h2>
-    <p class="section-subtitle">
-      Ready to bring your ideas to life? I'm available for freelance projects and full-time opportunities.
-    </p>
+  <div class="contact-bg-effects">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
+  
+  <div class="container">
+    <div class="contact-header">
+      <span class="section-badge glass">💬 Contact</span>
+      <h2 class="section-title">
+        <span>Let's Build Something</span>
+        <span class="gradient-text">Amazing Together</span>
+      </h2>
+      <p class="section-description">
+        Ready to transform your ideas into reality? I'm available for freelance projects, 
+        full-time opportunities, and consulting. Let's discuss how we can work together.
+      </p>
+    </div>
+    
     <div class="contact-content">
       <div class="contact-info">
-        <div class="contact-item">
-          <div class="contact-icon">📧</div>
-          <div>
-            <h3>Email</h3>
-            <p>aromiwedamilola@gmail.com</p>
+        <h3 class="info-title">Get In Touch</h3>
+        <div class="contact-methods">
+          <div class="contact-item glass animate-fade-in-up" style="--delay: 0s">
+            <div class="contact-icon">
+              <div class="icon-bg email">
+                <span>📧</span>
+              </div>
+              <div class="icon-glow"></div>
+            </div>
+            <div class="contact-details">
+              <h4>Email Me</h4>
+              <p>aromiwedamilola@gmail.com</p>
+              <span class="contact-note">Response within 24 hours</span>
+            </div>
+          </div>
+          
+          <div class="contact-item glass animate-fade-in-up" style="--delay: 0.1s">
+            <div class="contact-icon">
+              <div class="icon-bg phone">
+                <span>📱</span>
+              </div>
+              <div class="icon-glow"></div>
+            </div>
+            <div class="contact-details">
+              <h4>Call Me</h4>
+              <p>+234 706 239 5771</p>
+              <span class="contact-note">Available 9 AM - 6 PM WAT</span>
+            </div>
+          </div>
+          
+          <div class="contact-item glass animate-fade-in-up" style="--delay: 0.2s">
+            <div class="contact-icon">
+              <div class="icon-bg location">
+                <span>📍</span>
+              </div>
+              <div class="icon-glow"></div>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Lagos, Nigeria</p>
+              <span class="contact-note">Open to remote work</span>
+            </div>
           </div>
         </div>
-        <div class="contact-item">
-          <div class="contact-icon">📱</div>
-          <div>
-            <h3>Phone</h3>
-            <p>+234 706 239 5771</p>
+        
+        <div class="availability-card glass">
+          <h4>Current Availability</h4>
+          <div class="availability-status">
+            <div class="status-indicator available"></div>
+            <span>Available for new projects</span>
           </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">📍</div>
-          <div>
-            <h3>Location</h3>
-            <p>Lagos, Nigeria</p>
-          </div>
+          <p>I'm currently accepting new clients and exciting opportunities. Let's discuss your project!</p>
         </div>
       </div>
-      <form class="contact-form">
-        <div class="form-group">
-          <input type="text" placeholder="Your Name" required>
+      
+      <form class="contact-form glass animate-fade-in-up" style="--delay: 0.3s">
+        <div class="form-header">
+          <h3>Send a Message</h3>
+          <p>Fill out the form below and I'll get back to you as soon as possible.</p>
         </div>
-        <div class="form-group">
-          <input type="email" placeholder="Your Email" required>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+          </div>
         </div>
+        
         <div class="form-group">
-          <input type="text" placeholder="Subject" required>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="What's this about?" required>
         </div>
+        
         <div class="form-group">
-          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <label for="budget">Project Budget (Optional)</label>
+          <select id="budget">
+            <option value="">Select budget range</option>
+            <option value="under-5k">Under $5,000</option>
+            <option value="5k-15k">$5,000 - $15,000</option>
+            <option value="15k-50k">$15,000 - $50,000</option>
+            <option value="50k-plus">$50,000+</option>
+            <option value="discuss">Let's discuss</option>
+          </select>
         </div>
-        <button type="submit" class="submit-btn">Send Message</button>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell me about your project, goals, and how I can help..." rows="6" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">
+          <span>Send Message</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </form>
     </div>
   </div>
@@ -53,29 +131,92 @@
 
 <style>
   .contact {
-    padding: 6rem 0;
-    background: #000000;
-    color: white;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
   }
 
-  .contact-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+  .contact-bg-effects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .gradient-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: float 18s ease-in-out infinite;
+  }
+
+  .orb-1 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.3) 0%, transparent 50%);
+    top: 15%;
+    left: 15%;
+    animation-delay: 0s;
+  }
+
+  .orb-2 {
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, rgba(147, 51, 234, 0.3) 0%, transparent 50%);
+    top: 60%;
+    right: 15%;
+    animation-delay: 6s;
+  }
+
+  .orb-3 {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 50%);
+    bottom: 10%;
+    left: 50%;
+    animation-delay: 12s;
+  }
+
+  .contact-header {
+    text-align: center;
+    margin-bottom: 6rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(20px);
   }
 
   .section-title {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    opacity: 0.95;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: -0.03em;
   }
 
-  .section-subtitle {
-    font-size: 0.9rem;
-    text-align: center;
-    opacity: 0.7;
-    margin-bottom: 4rem;
+  .section-title span {
+    display: block;
+  }
+
+  .section-description {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   .contact-content {
@@ -83,97 +224,336 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: start;
+    position: relative;
+    z-index: 1;
+  }
+
+  .info-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .contact-item {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-delay: var(--delay);
+  }
+
+  .contact-item:hover {
+    transform: translateY(-4px);
+    border-color: rgba(34, 197, 94, 0.3);
+    box-shadow: var(--shadow-lg);
   }
 
   .contact-icon {
-    font-size: 2rem;
-    width: 60px;
-    height: 60px;
-    background: #1e293b;
-    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .icon-bg {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(10px);
+    position: relative;
   }
 
-  .contact-item h3 {
+  .icon-bg.email {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.1));
+    border-color: rgba(34, 197, 94, 0.3);
+  }
+
+  .icon-bg.phone {
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(139, 92, 246, 0.1));
+    border-color: rgba(147, 51, 234, 0.3);
+  }
+
+  .icon-bg.location {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.1));
+    border-color: rgba(59, 130, 246, 0.3);
+  }
+
+  .icon-glow {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: conic-gradient(from 0deg, transparent, rgba(34, 197, 94, 0.4), transparent);
+    border-radius: 18px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+  }
+
+  .contact-item:hover .icon-glow {
+    opacity: 1;
+    animation: spin 3s linear infinite;
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .contact-details {
+    flex: 1;
+  }
+
+  .contact-details h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
-    color: #60a5fa;
-    font-size: 0.9rem;
-    opacity: 0.9;
   }
 
-  .contact-item p {
-    font-size: 0.8rem;
+  .contact-details p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-note {
+    font-size: 0.85rem;
+    color: var(--text-muted);
     opacity: 0.8;
   }
 
+  .availability-card {
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    text-align: center;
+  }
+
+  .availability-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+  }
+
+  .availability-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  .status-indicator.available {
+    background: #22c55e;
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  .availability-status span {
+    font-weight: 600;
+    color: #22c55e;
+  }
+
+  .availability-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
 
   .contact-form {
-    background: #1e293b;
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 24px;
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    animation-delay: var(--delay);
+  }
+
+  .form-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .form-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .form-header p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
   }
 
   .form-group {
     margin-bottom: 1.5rem;
   }
 
+  .form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
   .form-group input,
-  .form-group textarea {
+  .form-group textarea,
+  .form-group select {
     width: 100%;
-    padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    background: #0f172a;
-    color: white;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--glass-bg);
+    color: var(--text-primary);
     font-size: 1rem;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
   }
 
   .form-group input:focus,
-  .form-group textarea:focus {
+  .form-group textarea:focus,
+  .form-group select:focus {
     outline: none;
-    border-color: #60a5fa;
+    border-color: rgba(34, 197, 94, 0.5);
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
   }
 
   .form-group input::placeholder,
   .form-group textarea::placeholder {
-    color: #94a3b8;
+    color: var(--text-muted);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
   }
 
   .submit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
     width: 100%;
-    padding: 1rem;
-    background: #60a5fa;
-    color: #0a0a0a;
+    padding: 1.25rem 2rem;
+    background: var(--primary-gradient);
+    color: white;
     border: none;
-    border-radius: 8px;
-    font-size: 1rem;
+    border-radius: 16px;
+    font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    transition: left 0.4s ease;
+    z-index: -1;
+  }
+
+  .submit-btn:hover::before {
+    left: 0;
   }
 
   .submit-btn:hover {
-    background: #3b82f6;
-    box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-xl);
+  }
+
+  @media (max-width: 1024px) {
+    .section-title {
+      font-size: 3.5rem;
+    }
   }
 
   @media (max-width: 768px) {
-    .contact-content {
-      grid-template-columns: 1fr;
-      gap: 2rem;
+    .contact {
+      padding: 80px 0;
     }
 
+    .section-title {
+      font-size: 2.8rem;
+    }
+
+    .section-description {
+      font-size: 1.1rem;
+    }
+
+    .contact-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .contact-item {
+      padding: 1.5rem;
+    }
+
+    .contact-form {
+      padding: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contact-item {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .submit-btn {
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+    }
   }
 </style>

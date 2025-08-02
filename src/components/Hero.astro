@@ -3,268 +3,446 @@
 ---
 
 <section id="home" class="hero">
-  <div class="hero-container">
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span>Full Stack Developer | Software Architect</span>
+  <div class="hero-bg-effects">
+    <div class="floating-orb orb-1"></div>
+    <div class="floating-orb orb-2"></div>
+    <div class="floating-orb orb-3"></div>
+  </div>
+  
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content animate-fade-in-up">
+        <div class="hero-badge glass">
+          <span class="gradient-text">✨ Full Stack Developer & Software Architect</span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="title-line">Building the</span>
+          <span class="title-line gradient-text">Future of Web</span>
+          <span class="title-line">One App at a Time</span>
+        </h1>
+        
+        <p class="hero-description">
+          Transforming complex business challenges into elegant, scalable digital solutions. 
+          With 8 years of expertise in full-stack development, I craft experiences that users love and businesses thrive on.
+        </p>
+        
+        <div class="hero-stats glass">
+          <div class="stat-item">
+            <div class="stat-number gradient-text">8+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number gradient-text">50+</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number gradient-text">15+</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+        </div>
+        
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary">
+            <span>Explore My Work</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary glass">
+            <span>Let's Connect</span>
+          </a>
+        </div>
       </div>
-      <h1 class="hero-title">
-        Hi, I'm <span class="highlight">Damilola Aromiwe</span>
-      </h1>
-      <p class="hero-description">
-        Experienced Full Stack Developer with 8 years of expertise in building scalable web applications, mobile applications, and backend systems. I transform business requirements into innovative, user-centric technology solutions.
-      </p>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-number">8+</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">50+</span>
-          <span class="stat-label">Projects Delivered</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">15+</span>
-          <span class="stat-label">Happy Clients</span>
-        </div>
-      </div>
-      <div class="hero-buttons">
-        <a href="#portfolio" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <div class="profile-image">
-        <div class="profile-placeholder">
-          <span>👨‍💻</span>
-        </div>
-        <div class="floating-tech">
-          <span class="tech-icon">⚛️</span>
-          <span class="tech-icon">📱</span>
-          <span class="tech-icon">🔗</span>
-          <span class="tech-icon">☁️</span>
-        </div>
-      </div>
+      
     </div>
   </div>
 </section>
 
 <style>
   .hero {
-    min-height: 100vh;
+    height: 120vh;
     display: flex;
     align-items: center;
-    background: #000000;
-    color: white;
-    padding-top: 80px;
     position: relative;
+    padding: 0;
     overflow: hidden;
   }
 
-  .hero::before {
-    content: '';
+  .hero-bg-effects {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 20% 50%, rgba(96, 165, 250, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(251, 191, 36, 0.1) 0%, transparent 50%);
+    width: 100%;
+    height: 100%;
     pointer-events: none;
+    z-index: 0;
   }
 
-  .hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+  .floating-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    animation: float 8s ease-in-out infinite;
+  }
+
+  .orb-1 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(102, 126, 234, 0.4) 0%, transparent 50%);
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+
+  .orb-2 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(245, 101, 101, 0.3) 0%, transparent 50%);
+    top: 60%;
+    right: 10%;
+    animation-delay: 2s;
+  }
+
+  .orb-3 {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 50%);
+    bottom: 20%;
+    left: 50%;
+    animation-delay: 4s;
+  }
+
+  .hero-grid {
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
     z-index: 1;
   }
 
-  .hero-title {
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-    opacity: 0.95;
-  }
-
-  .highlight {
-    color: #fbbf24;
-  }
-
-  .hero-description {
-    font-size: 0.95rem;
-    margin-bottom: 2rem;
-    opacity: 0.7;
-  }
-
-  .hero-buttons {
+  .hero-content {
+    max-width: 900px;
     display: flex;
-    gap: 1rem;
-  }
-
-  .btn {
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    display: inline-block;
-  }
-
-  .btn-primary {
-    background: #fbbf24;
-    color: #1f2937;
-  }
-
-  .btn-primary:hover {
-    background: #f59e0b;
-    transform: translateY(-2px);
-  }
-
-  .btn-secondary {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-  }
-
-  .btn-secondary:hover {
-    background: white;
-    color: #667eea;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 22rem 2rem 4rem;
+    height: 100%;
+    min-height: 120vh;
   }
 
   .hero-badge {
-    display: inline-block;
-    background: rgba(96, 165, 250, 0.1);
-    color: #60a5fa;
-    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
     border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    border: 1px solid rgba(96, 165, 250, 0.3);
-    backdrop-filter: blur(10px);
-    opacity: 0.9;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  .hero-title {
+    font-size: 4.2rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: -0.03em;
+  }
+
+  .title-line {
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-description {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 85%;
   }
 
   .hero-stats {
     display: flex;
-    gap: 2rem;
-    margin: 2rem 0;
+    align-items: center;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    backdrop-filter: blur(20px);
+    min-width: 500px;
   }
 
-  .stat {
+  .stat-item {
     text-align: center;
+    flex: 1;
   }
 
   .stat-number {
-    display: block;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #60a5fa;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.5rem;
   }
 
   .stat-label {
-    font-size: 0.8rem;
-    opacity: 0.6;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
   }
 
-  .profile-image {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
+  .stat-divider {
+    width: 1px;
+    height: 40px;
+    background: var(--border-color);
+    margin: 0 1rem;
   }
 
-  .profile-placeholder {
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+  .hero-actions {
     display: flex;
+    gap: 2.5rem;
     align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    backdrop-filter: blur(10px);
-    border: 3px solid rgba(251, 191, 36, 0.3);
+    margin-top: 1rem;
   }
 
-  .floating-tech {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 2.5rem;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn::before {
+    content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
-    pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s;
   }
 
-  .tech-icon {
-    position: absolute;
-    font-size: 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 0.5rem;
-    border-radius: 50%;
-    backdrop-filter: blur(10px);
-    animation: float 3s ease-in-out infinite;
+  .btn:hover::before {
+    left: 100%;
   }
 
-  .tech-icon:nth-child(1) {
-    top: 10%;
-    right: 10%;
-    animation-delay: 0s;
+  .btn-primary {
+    background: var(--primary-gradient);
+    color: white;
+    box-shadow: var(--shadow-lg);
   }
 
-  .tech-icon:nth-child(2) {
-    bottom: 20%;
-    right: 0%;
-    animation-delay: 1s;
+  .btn-primary:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-xl);
   }
 
-  .tech-icon:nth-child(3) {
-    top: 60%;
-    left: -10%;
-    animation-delay: 2s;
+  .btn-secondary {
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
   }
 
-  .tech-icon:nth-child(4) {
-    top: 20%;
-    left: 10%;
-    animation-delay: 0.5s;
+  .btn-secondary:hover {
+    transform: translateY(-2px);
+    border-color: rgba(102, 126, 234, 0.5);
   }
 
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+
+
+  @media (max-width: 1024px) {
+    .hero-content {
+      max-width: 800px;
+      padding: 20rem 1.5rem 3rem;
+    }
+    
+    .hero-title {
+      font-size: 3.8rem;
+    }
+    
+    .hero-description {
+      font-size: 1.2rem;
+      max-width: 85%;
+    }
+    
+    .hero-stats {
+      min-width: 450px;
+      padding: 1.75rem 2.5rem;
+    }
+    
+    .stat-number {
+      font-size: 2.2rem;
+    }
   }
 
   @media (max-width: 768px) {
-    .hero-container {
-      grid-template-columns: 1fr;
-      text-align: center;
-      gap: 2rem;
+    .hero {
+      height: 110vh;
     }
-
+    
+    .hero-content {
+      max-width: 100%;
+      padding: 18rem 1rem 3rem;
+      min-height: 110vh;
+      justify-content: space-between;
+    }
+    
     .hero-title {
-      font-size: 1.8rem;
+      font-size: 3.2rem;
     }
-
-    .hero-buttons {
-      justify-content: center;
-      flex-wrap: wrap;
+    
+    .title-line {
+      margin-bottom: 0.5rem;
     }
-
+    
+    .hero-description {
+      font-size: 1.15rem;
+      max-width: 95%;
+    }
+    
     .hero-stats {
-      justify-content: center;
+      padding: 1.5rem 2rem;
+      min-width: auto;
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+    }
+    
+    .stat-label {
+      font-size: 0.8rem;
+    }
+    
+    .hero-actions {
+      flex-direction: column;
       gap: 1.5rem;
     }
+    
+    .btn {
+      width: 100%;
+      justify-content: center;
+      max-width: 300px;
+      padding: 1.1rem 2rem;
+      font-size: 1rem;
+    }
+  }
 
-    .profile-image {
-      width: 250px;
-      height: 250px;
+  @media (max-width: 480px) {
+    .hero {
+      height: 100vh;
+    }
+    
+    .hero-content {
+      padding: 16rem 1rem 2rem;
+      min-height: 100vh;
+    }
+    
+    .hero-title {
+      font-size: 2.8rem;
+    }
+    
+    .hero-description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    
+    .hero-stats {
+      padding: 1.25rem 1.5rem;
+      min-width: auto;
+    }
+    
+    .stat-number {
+      font-size: 1.8rem;
+    }
+    
+    .stat-label {
+      font-size: 0.75rem;
+    }
+    
+    .btn {
+      padding: 1rem 1.75rem;
+      font-size: 0.95rem;
+      max-width: 280px;
+    }
+  }
+
+  @media (min-height: 1200px) {
+    .hero-content {
+      padding: 25rem 2rem 8rem;
+    }
+  }
+
+  @media (max-height: 800px) and (min-width: 769px) {
+    .hero {
+      height: 100vh;
+    }
+    
+    .hero-content {
+      padding: 18rem 2rem 3rem;
+      min-height: 100vh;
+      justify-content: space-between;
+    }
+    
+    .hero-title {
+      font-size: 3.8rem;
+    }
+    
+    .hero-description {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .hero-stats {
+      padding: 1.75rem 2.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .stat-number {
+      font-size: 2.2rem;
+    }
+  }
+
+  @media (max-height: 700px) and (min-width: 769px) {
+    .hero-content {
+      padding: 16rem 2rem 2rem;
+    }
+    
+    .hero-title {
+      font-size: 3.4rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero-description {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero-stats {
+      padding: 1.5rem 2.25rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+    }
+    
+    .btn {
+      padding: 1rem 2rem;
+      font-size: 1rem;
     }
   }
 </style>
